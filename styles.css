@@ -1,0 +1,108 @@
+body {
+  background-color: #121212; /* Dark mode background */
+  color: #fff; /* Light text for contrast */
+}
+
+img {
+  max-width: 100%; /* Ensures the image is no larger than its parent element */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.about,
+.language-title,
+p {
+  font-size: 20px;
+}
+#title {
+  font-size: 30px;
+}
+
+.skill-category {
+  margin-bottom: 20px; /* Spacing between categories */
+  padding-left: 40px;
+}
+.skill-category-center {
+  margin: 20px auto; /* Center vertically and horizontally */
+  text-align: center;
+  max-width: 600px;
+}
+
+.category-title {
+  font-size: 50px;
+  text-align: center;
+}
+.language-title {
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center; /* Center footer content */
+  padding: 20px 0; /* Padding above and below footer content */
+  margin-top: auto; /* Push footer to bottom if content is short */
+}
+.skills-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 125px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item {
+  display: flex;
+  gap: 10px; /* Spacing between icon and text */
+  font-size: 50px;
+  margin-bottom: 10px; /* Spacing between items */
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none; /* Removes default list styling */
+  gap: 10px; /* This creates a gap between the items */
+}
+
+.tags li {
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0; /* Padding above and below */
+  font-size: 16px; /* Base font size */
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none; /* No underline */
+  padding: 0 10px; /* Space around links */
+}
+
+.site-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: center; /* Center the contact links */
+  padding: 10px 0; /* Padding above and below */
+}
+
+.footer-contacts a {
+  display: flex;
+  align-items: center; /* Align icons and text */
+  gap: 5px; /* Space between icon and text */
+}
