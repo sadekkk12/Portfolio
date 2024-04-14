@@ -1,233 +1,371 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <div class="container">
-       <div class="row justify-content-center">
-      <header class="text-center my-5 col-lg-7 col-md-6">
-        <img  src="Images/Name.png">
-        <p id="title">Software Developer</p>
-        <p>
-          I am an AP Computer Science student at Copenhagen School of Design and Technology (KEA), 
-          where i have developed a skillset in Java, HTML, CSS, JavaScript, backend technologies and foundational knowledge in DevOps.
-           I have pursued IOS and Mobile Development outside of formal education by learning Swift.
-        </p>
-        <p>
-          I am currently on my 4th semester and therefore looking for a 10-week
-          unpaid internship in my 5th and last semester. Part-time jobs are also
-          of interest.
-        </p>
-      </header>
-     </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="Images/Icon.png" type="image/png" sizes="32x32">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #333;">
+      <a href="#" class="navbar-brand mb-0 h1">
+        <img class="d-inline-block align-top" src="Images/Icon.png" width="38" height="30" />
+      </a>
+      <button 
+      type="button"
+       data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item active">
+            <a href="#" class="nav-link active">
+              Home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#projects" class="nav-link active">
+              Project
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#skills" class="nav-link active">
+              Skills
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#outside" class="nav-link active">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container hidden">
+    <div class="row justify-content-center">
+      <div class="text-center my-5 col-lg-7 col-md-6">
+        <img src="Images/Name.png" style="margin-top: 50px;">
+       <p class="lead">Software Developer & Lifelong Learner</p>
+        <ul class="list-unstyled">
+          <li><i class="fa-solid fa-school"></i>  4th Semester Computer Science Student at KEA</li>
+          <li><i class="fas fa-code"></i> Skilled in Java, HTML, CSS, Backend Technologies & foundational DevOps</li>
+          <li><i class="fas fa-mobile-alt"></i> Passion for iOS, Mobile Development & Backend Development</li>
+          <li><i class="fa-solid fa-book"></i> Currently learning Swift, React Native, DSA & Intro to Cybersecurity</li>
+        </ul>
+        <p>I am keenly looking for an opportunity to undertake a 10-week unpaid internship during my final semester starting August.
+           I am also open to part-time roles that will allow me to continue growing while contributing to impactful projects.</p>
+      </div>
     </div>
-   
+  </div>
 
-    <main class="container">
-      <section class="mb-5">
-        <h2 class="text-center">Projects</h2>
-        <div id="StoicOpenAI">
-          <div class="row border-bottom pb-5">
-            <div class="col-lg-8 col-md-6">
-              <img src="Images/StoicAIMockUp.png" alt="Project Image" class="img-fluid" />
-              The large image portrays the contrast between external serenity and internal turmoil, embodying the Stoic view that our inner reactions shape our reality, regardless of outside influences.
-               It visualizes the concept that peace is not about our surroundings, but about our internal resilience and perception.
-            </div>
-            <div class="col-lg-4 pt-5">
-              <h3>Stoic OpenAI</h3>
-              <p>Stoic OpenAI is a web application that blends ancient wisdom and modern AI technology. 
-               It combines the timeless insights of Stoic philosophy with the cutting-edge capabailities of AI models like
-                 GPT-4 and DALL-E, accessed via the OpenAI API. Each interaction offers Stoic quotes, elaborate explanations, and customized AI-generated visuals that resonate with the users input. Hosted on Azure and upholds CI/CD practices with Github Actions, ensuring streamlined,
-                  consistent updates and deployment for both its frontend and backend.
-  
-                  <p>Technologies:</p>
-              <ul class="tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>BootStrap</li>
-                <li>JavaScript</li>
-                <li>JUnit 5</li>
-                <li>Java (SpringBoot)</li>
-                <li>Maven</li>
-                <li>RESTful APIs</li>
-                <li>Azure</li>
-              
-              </ul>
-              <p>Learn more:</p>
-              <a target=”_blank” style="padding-right: 50px;" href="https://github.com/sadekkk12/StoicOpenAI_frontend">Frontend Source Code</a>
-              <a target=”_blank” href="https://github.com/sadekkk12/StoicOpenAI_backend">Backend Source Code</a>
-            </div>
-  
+
+  <main class="container">
+    <div class="hidden" id="projects">
+      <h2 class="text-center">Projects</h2>
+      <div id="StoicOpenAI">
+        <div class="row border-bottom pb-5">
+          <div class="col-lg-8 col-md-6">
+            <img src="Images/StoicAIMockUp.png" alt="Project Image" class="img-fluid" />
+            The large image portrays the contrast between external serenity and internal turmoil, embodying the Stoic
+            view that our inner reactions shape our reality, regardless of outside influences.
+            It visualizes the concept that peace is not about our surroundings, but about our internal resilience and
+            perception.
           </div>
-        </div>
+          <div class="col-lg-4 pt-5">
+            <h3>Stoic OpenAI</h3>
+            <p>Stoic OpenAI is a web application that blends ancient wisdom and modern AI technology.
+              It combines the timeless insights of Stoic philosophy with the cutting-edge capabailities of AI models
+              like
+              GPT-4 and DALL-E, accessed via the OpenAI API. Each interaction offers Stoic quotes, elaborate
+              explanations, and customized AI-generated visuals that resonate with the users input. Hosted on Azure and
+              upholds CI/CD practices with Github Actions, ensuring streamlined,
+              consistent updates and deployment for both its frontend and backend.
 
+            <p>Technologies:</p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>BootStrap</li>
+              <li>JavaScript</li>
+              <li>JUnit 5</li>
+              <li>Java (SpringBoot)</li>
+              <li>Maven</li>
+              <li>RESTful APIs</li>
+              <li>Azure</li>
+
+            </ul>
+            <p>Learn more:</p>
+            <a target=”_blank” style="padding-right: 50px;"
+              href="https://github.com/sadekkk12/StoicOpenAI_frontend">Frontend Source Code</a>
+            <a target=”_blank” href="https://github.com/sadekkk12/StoicOpenAI_backend">Backend Source Code</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div class="hidden mb-5">
         <div id="BrainDeck">
-          <div class="row border-bottom pb-5">
-            <div class="col-lg-8 col-md-6 mt-5">
-              <img src="Images/BrainDeck.jpeg" alt="Project Image" class="img-fluid" />
+        <div class="row border-bottom pb-5">
+          <div class="col-lg-8 col-md-6 mt-5">
+            <img src="Images/BrainDeck.jpeg" alt="Project Image" class="img-fluid" />
 
-            </div>
-            <div class="col-lg-4 pt-5">
-              <h3>Current Project - BrainDeck</h3>
-              <h4>Overview</h4>
-              <p>BrainDeck is an IOS app that allows you to create customized flashcards and put them in a bundle/category of your choosing. 
-                You can then use these bundles to run a Study Mode, which lets you practice these flashcards and also informs you which cards need more practice.
-              <h4>
-                Progress and Learning
-              </h4>
-                <p>
-                  I am in the earlier stages of the development. I have created the foundational parts of my Model, 
-                  while implementing the MVC pattern. I have my first take on some of the UI and am now focusing on making it possible to create categories/flashcards through the UI. 
-                  Followed by implementing data persistence through CoreData to store the categories and flashcards locally inside the device.  
-                </p>
-                  <p>Technologies:</p>
-              <ul class="tags">
-                <li>Swift</li>
-                <li>CoreData</li>
-              </ul>
-              
-            </div>
           </div>
+          <div class="col-lg-4 pt-5">
+            <h3>Current Project - BrainDeck</h3>
+            <h4>Overview</h4>
+            <p>BrainDeck is an IOS app that allows you to create customized flashcards and put them in a bundle/category
+              of your choosing.
+              You can then use these bundles to run a Study Mode, which lets you practice these flashcards and provides feedback.
+            <h4>
+              Progress and Learning
+            </h4>
+            <p>
+              I am in the earlier stages of the development. I have created the foundational parts of my Model,
+              while implementing the MVC pattern. I have my first take on some of the UI and currently making
+              it possible to create flashcards through the UI.
+              Followed by implementing data persistence through CoreData to store the categories and flashcards locally
+              inside the device.
+            </p>
+            <p>Technologies:</p>
+            <ul class="tags">
+              <li>Swift</li>
+              <li>CoreData</li>
+            </ul>
 
+          </div>
         </div>
-        
-      </section>
-    </main>
-      <!-- Skills Section -->
-      <div class="skills-section">
-        <h2 class="category-title">Skills</h2>
-        <h2 class="skills-categories">Soft Skills</h2>
-        <div class="skill-category-center">
-          <p class="about mb-5">
-            I am a good communicator and excel in teamwork, collaboration and
-            have experience in team projects with an Agile Workflow. I have a
-            drive for learning, growing and i am eager to contribute
-            meaningfully to projects and teams, with focus on adding value.
-          </p>
-        </div>
+
+      </div>
+    </div>
+
+  </main>
+  <div class="hidden">
+    <!-- Skills Section -->
+    <div class="skills-section" id="skills">
+      <h2 class="category-title">Skills</h2>
+      <h2 class="skills-categories">Soft Skills</h2>
+      <div class="skill-category-center">
+        <p class="about mb-5">
+          I am a good communicator and excel in teamwork, collaboration and
+          have experience in team projects with an Agile Workflow. I have a
+          drive for learning, growing and i am eager to contribute
+          meaningfully to projects and teams, with focus on adding value.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="skills-section">
+    <div class="skills-categories">
+      <div class="skill-category hidden">
+        <h3>Frontend</h3>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <i class="devicon-html5-plain colored"></i>
+            <span class="language-title">HTML</span>
+          </li>
+          <li class="skill-item">
+            <i class="devicon-css3-plain colored"></i>
+            <span class="language-title">CSS</span>
+          </li>
+
+          <li class="skill-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span class="language-title">Javascript</span>
+          </li>
+
+          <li class="skill-item">
+            <i class="devicon-nodejs-plain colored"></i>
+            <span class="language-title">Node.js</span>
+          </li>
+
+          <li class="skill-item">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <span class="language-title">Bootstrap</span>
+          </li>
+
+
+        </ul>
       </div>
 
-      <div class="skills-section">
-        <div class="skills-categories">
-          <div class="skill-category">
-            <h3>Frontend</h3>
-            <ul class="skill-list">
-              <li class="skill-item">
-                <i class="devicon-html5-plain colored"></i>
-                <span class="language-title">HTML</span>
-              </li>
-              <li class="skill-item">
-                <i class="devicon-css3-plain colored"></i>
-                <span class="language-title">CSS</span>
-              </li>
+      <div class="skill-category hidden">
+        <h3>Mobile Development</h3>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <i class="devicon-swift-plain colored"></i>
+            <span class="language-title">Swift</span>
+          </li>
+          <li class="skill-item">
+            <i class="devicon-firebase-plain colored"></i>
+            <span class="language-title">Firebase</span>
+          </li>
+          <li class="skill-item">
+            <i class="devicon-react-original colored"></i>
+            <span class="language-title">React Native</span>
+          </li>
+          <li class="skill-item">
+            <img src="Images/Expo.png" width="50px">
+            <span class="language-title">Expo</span>
+          </li>
 
-              <li class="skill-item">
-                <i class="devicon-javascript-plain colored"></i>
-                <span class="language-title">Javascript</span>
-              </li>
+        </ul>
+      </div>
+      <div class="skill-category hidden">
+        <h3>Backend</h3>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <i class="devicon-java-plain colored"></i>
+            <span class="language-title">Java</span>
+          </li>
 
-              <li class="skill-item">
-                <i class="devicon-nodejs-plain colored"></i>
-                <span class="language-title">Node.js</span>
-              </li>
+          <li class="skill-item">
+            <i class="devicon-spring-original colored"></i>
+            <span class="language-title">SpringBoot</span>
+          </li>
+          <li class="skill-item">
+            <i class="devicon-mysql-original colored"></i>
+            <span class="language-title">MySQL</span>
+          </li>
 
-              <li class="skill-item">
-                <i class="devicon-bootstrap-plain colored"></i>
-                <span class="language-title">Bootstrap</span>
-              </li>
-
-
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Mobile Development</h3>
-            <ul class="skill-list">
-              <li class="skill-item">
-                <i class="devicon-swift-plain colored"></i>
-                <span class="language-title">Swift</span>
-              </li>
-              <li class="skill-item">
-                <i class="devicon-firebase-plain colored"></i>
-                <span class="language-title">Firebase</span>
-              </li>
-              <li class="skill-item">
-                <i class="devicon-react-original colored"></i>
-                <span class="language-title">React Native</span>
-              </li>
-              <li class="skill-item">
-               <img src="Images/Expo.png" width="50px" >
-                <span class="language-title">Expo</span>
-              </li>
-
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Backend</h3>
-            <ul class="skill-list">
-              <li class="skill-item">
-                <i class="devicon-java-plain colored"></i>
-                <span class="language-title">Java</span>
-              </li>
-
-              <li class="skill-item">
-                <i class="devicon-spring-original colored"></i>
-                <span class="language-title">SpringBoot</span>
-              </li>
-              <li class="skill-item">
-                <i class="devicon-mysql-original colored"></i>
-                <span class="language-title">MySQL</span>
-              </li>
-
-              <li class="skill-item">
-                <i class="devicon-postman-plain colored"></i>
-                <span class="language-title">PostMan</span>
-              </li>
-              <li class="skill-item">
+          <li class="skill-item">
+            <i class="devicon-postman-plain colored"></i>
+            <span class="language-title">PostMan</span>
+          </li>
+          <li class="skill-item">
             <i class="devicon-hibernate-plain colored"></i>
-          <span class="language-title">Hibernate</span>
-              </li>
+            <span class="language-title">Hibernate</span>
+          </li>
 
-              <li class="skill-item">
-                <i class="devicon-junit-plain colored"></i>
-                <span class="language-title">Junit5</span>
-              </li>
-            </ul>
+          <li class="skill-item">
+            <i class="devicon-junit-plain colored"></i>
+            <span class="language-title">Junit5</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  </main>
+
+  <section class="container hidden p-5 border-top" id="outside">
+  <div class="container mt-3">
+    <h2 class="text-center mb-5">Outside of Work</h2>
+    <div class="row text-center g-4">
+      <!-- Listening Card -->
+      <div class="cards col-md-6 col-lg-3 hidden">
+         <h5 class="card-title">Photographing</h5>
+        <div class="card bg-transparent border-0">
+          <img src="Images/picture.jpg" class="card-img-top pt-3" alt="Watching">
+          <div class="card-body text-center mt-2">
+            <p class="card-text">Scenery</p>
           </div>
-
         </div>
       </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <a href="https://github.com/sadekkk12" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="mailto:sadekdev@hotmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i> sadekdev@hotmail.com
-          </a>
+      <!-- Reading Card -->
+      
+      <div class="cards col-md-6 col-lg-3 hidden">
+         <h5 class="card-title">Watching</h5>
+        <div class="card bg-transparent border-0">
+          <img src="Images/BreakingBad.jpg" class="card-img-top pt-3" alt="Watching">
+          <div class="card-body text-center mt-2">
+            <p class="card-text">Breaking Bad</p>
+          </div>
         </div>
       </div>
-    </footer>
-    
-  </body>
+      <!-- Watching Card -->
+       <!-- Watching -->
+      <div class="cards col-md-6 col-lg-3 hidden">
+          <h5 class="card-title">Training</h5>
+        <div class="card bg-transparent border-0">
+          <img src="Images/gym.jpg" class="card-img-top pt-3" alt="Watching">
+          <div class="card-body text-center mt-2">
+            <p class="card-text">Weightlifting</p>
+          </div>
+        </div>
+      </div>
+      <!-- Playing Card -->
+      <div class="cards col-md-6 col-lg-3 hidden">
+        <h5 class="card-title">Playing</h5>
+        <div class="card bg-transparent border-0">
+          <img src="Images/Valorant1.jpg" class="card-img-top pt-3" alt="Watching">
+          <div class="card-body text-center mt-2">
+            <p class="card-text">Valorant</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact hidden" >
+  
+ <div class="container mt-5 border-top pt-5">
+    <h2 class="text-center mb-4">Let's Connect!</h2>
+    <div class=" text-center">
+        <p>Congrats on making it this far! 😊 I hope you've enjoyed exploring my work as much as I've enjoyed putting it together.</p>
+        <p>I'm always looking to connect with people who are looking for someone eager to learn and quick to adapt. Whether it's a project you need a hand with or a role you think I'd fit into, I'm all ears.</p>
+        <p>🌟 Quick highlights:</p>
+        <ul class="list-unstyled">
+            <li>I'm on the lookout for opportunities where I can dive deep and put my skills to good use.</li>
+            <li>I'm a quick learner and super keen to keep growing professionally.</li>
+            <li>Got something on your mind? Let's chat! I'm just an email (or call) away from being your next enthusiastic team member.</li>
+        </ul>
+        <p>Reach out to me through any of the following ways and let's see how I can help you out!</p>
+        <!-- Here you might list your contact methods or include a contact form -->
+    </div>
+</div>
+
+  <ul class="text-center mb-5" style="list-style-type: none;">
+    <li>Email: <a href="mailto:sadekdev@hotmail.com">sadekdev@hotmail.com</a></li>
+    <li>GitHub: <a href="https://github.com/sadekkk12">github.com/sadekkk12</a></li>
+  </ul>
+  </div>
+  
+  
+  
+</section>
+
+
+  <footer class="site-footer">
+    <div class="container" id="footer">
+      <div class="footer-contacts">
+        <a href="https://github.com/sadekkk12" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:sadekdev@hotmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i> sadekdev@hotmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+
+ <!-- Correct Bootstrap Bundle JS with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
 </html>

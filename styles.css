@@ -21,6 +21,25 @@ p {
   margin-bottom: 20px; /* Spacing between categories */
   padding-left: 40px;
 }
+.skill-category:nth-child(2),
+.cards:nth-child(2) {
+  transition-delay: 200ms;
+
+}
+.skill-category:nth-child(3),
+.cards:nth-child(3) {
+  transition-delay: 400ms;
+
+}
+.skill-category:nth-child(4),
+.cards:nth-child(4) {
+  transition-delay: 600ms;
+
+}
+.skill-category:nth-child(5), .cards:nth-child(5) {
+  transition-delay: 800ms;
+
+}
 .skill-category-center {
   margin: 20px auto; /* Center vertically and horizontally */
   text-align: center;
@@ -34,6 +53,7 @@ p {
 .language-title {
   font-size: 30px;
 }
+
 
 footer {
   display: flex;
@@ -106,3 +126,42 @@ footer {
   align-items: center; /* Align icons and text */
   gap: 5px; /* Space between icon and text */
 }
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Target the sections by their IDs */
+#home, #projects, #contact, #outside {
+  position: relative;
+}
+
+#home:before, #projects:before, #skills:before  , #contact:before ,
+#outside:before {
+  content: "";
+  display: block;
+  height: 70px;  
+  margin-top: -70px;  
+  visibility: hidden;
+}
+.navbar {
+  padding-left: 30px;  /* Adjust the value as needed to move it to the right */
+}
+.nav-item {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.contacts {
+  list-style-type: none;
+}
+
+
+
+
+
